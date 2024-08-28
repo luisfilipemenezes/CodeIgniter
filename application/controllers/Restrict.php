@@ -23,4 +23,11 @@ class Restrict extends CI_Controller {
         );
         $this->template->show('login', $data);
     }
+
+	public function register_user(){
+		$user_email = $this->input->post('user_email');
+		$user_password = $this->input->post('user_password');
+
+		$response = $this->users_model->insert_user_data($user_email,$user_password);
+	}
 }

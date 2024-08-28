@@ -22,6 +22,27 @@ class Users_model extends CI_Model {
 		}
 
 	}
+
+	public function insert_user_data($user_email,$user_password){
+		$data = array(
+			'user_email'=>$user_email,
+			'user_password'=>password_hash($user_password, PASSWORD_BCRYPT)
+		);
+
+		if($this->db->insert('users',$data)){
+			return array(
+				'status'=>'sucess',
+				'message'=>'Usuario cadastrado com sucesso'
+			);
+		}else{
+			return array(
+				'status'=> 'erro',
+				'message'=>' nao foi possivel cadastrar usuario'
+			);
+		}
+	}
+
+	
 }
 
 
