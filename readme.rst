@@ -1,3 +1,35 @@
+Funcionalidades:
+
+Autenticação de Usuários: Sistema de login com validação de usuário e senha, garantindo acesso seguro às informações confidenciais.
+Página Inicial: Apresentação geral da empresa, destacando seus valores, missão e visão.
+Portfólio de Projetos: Seção dedicada a exibir os principais projetos da empresa, com descrições detalhadas, imagens e links para mais informações.
+
+Sobre a Empresa:
+Informações sobre a história da empresa, equipe e localização.
+Serviços Oferecidos: Lista de serviços prestados pela empresa, com detalhes sobre cada um deles.
+Contato: Formulário de contato para clientes e visitantes entrarem em comunicação diretamente com a empresa.
+Tecnologias Utilizadas:
+
+Frontend: HTML, CSS, JavaScript
+Backend: PHP com CodeIgniter
+Banco de Dados: MySQL
+Controle de Versão: Git
+
+Instalação:
+
+Clone este repositório para o seu ambiente local:
+bash
+Copiar código
+git clone https://github.com/seu-usuario/nome-do-projeto.git
+Navegue até o diretório do projeto:
+bash
+Copiar código
+cd nome-do-projeto
+Configure o banco de dados e as credenciais no arquivo application/config/database.php
+
+
+
+
 ###################
 What is CodeIgniter
 ###################
